@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(65, 65, 65);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-image: url('fireMedia/avto_sneg.jpg');
+    height: 70px;
+}
+header h1 {
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: red;
+    padding: 10px;
+}
+p {
+    font-size: 2.7vh;
+    margin: 5px;
+    color: rgb(27, 22, 22);
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+    border: 2px solid rgb(55, 54, 54);
+    border-radius: 5px;
+    margin: 10px;
+    height: 70px;
+}
+
+nav ul {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+nav li {
+    margin: 0 20px;
+ }
+
+nav a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+h2, h3{
+    margin: 5px;
+    color: rgb(109, 23, 23);
+    font-size: 3.7vh;
+    padding: 7px 0px 3px 0px;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+}
+
+.divs {
+    background-color: darkgray;
+    margin: 10px;
+    padding: 10px;
+    border: 2px red solid;
+    border-radius: 5px;
+    width: 33%;
+}
+
+.slikeDivsHmpg {
+    margin: 5px;
+    padding-top: 10px ;
+}
+
+#ulov {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(170, 0, 0);
+    padding: 7px;
+}
+footer p {
+    color: white;
+}
+#kontakt {
+    font-size: 14px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px red dotted;
+    text-align: center;
+    position: inherit;
+    width: max-content;
+    color: white;
+}
+
+#kontakt a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+    /* font-size: 101%; */
+}
+
+/* img:first-child {
+    cursor: pointer;
+    transform: scale(1.3);
+} */
+
+ul li:first-child {
+    transform: scale(1.3);
+}
+ul li:nth-child(2) {
+    transform: scale(1.3);
+}
+ul li:nth-child(3) {
+    transform: scale(1.3);
+}
+ul li:nth-child(4) {
+    transform: scale(1.3);
+}
+ul li:nth-child(5) {
+    transform: scale(1.3);
+}
+ul li:last-child {
+    transform: scale(1.3);
+}
