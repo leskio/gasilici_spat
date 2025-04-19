@@ -15,13 +15,13 @@ header h1 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 800;
-    font-size: 6vh;
+    font-size: 3em;
     color: rgb(0, 0, 0);
     padding: 10px;
     /* text-shadow: 1px 1px white; */
 }
 p {
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin: 1vh;
     color: rgb(27, 22, 22);
 }
@@ -48,14 +48,14 @@ nav li {
 
 nav a {
     color: white;
-    font-size: 16px;
+    font-size: 1.1em;
     text-decoration: none;
 }
 
-h2, h3{
+h2 {
     margin: 5px;
     color: rgb(109, 23, 23);
-    font-size: 3.7vh;
+    font-size: 2em;
     padding: 7px 0px 3px 0px;
 }
 
@@ -70,14 +70,21 @@ h2, h3{
     padding: 10px;
     border: 2px red solid;
     border-radius: 5px;
-    width: 33%;
+    width: 50%;
 }
 
 .slikeDivsHmpg {
     margin: 1vh;
     padding-top: 10px ;
     align-items: center;
-    size: 2vh;
+    object-fit: contain;
+    width: 90%;
+    max-height: 50%;
+}
+
+.divImage {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -88,6 +95,7 @@ footer {
 }
 footer p {
     color: white;
+    font-size: 1em;
 }
 #kontakt {
     font-size: 14px;
