@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <title>PGD Majšperk-Breg</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fireMedia/pgd_logo.png">
+</head>
+<body>
+    <header>
+        <h1>Obrazec</h1>
+    </header>
+
+    <script>
+        function prikaziAlert (){
+            alert("Obrazec poslan")
+        }
+
+        function svetloOzadje() {
+            document.body.style.backgroundColor = "#7d7878";
+        }
+        function temnoOzadje() {
+            document.body.style.backgroundColor = "#414141";
+        }
+
+        function preveriObrazec (){
+            const ime = document.getElementById("ime").value.trim();
+            const priimek = document.getElementById("priimek").value.trim();
+            const email = document.getElementById("email").value.trim();
+
+            if (ime === "" || priimek === "" || email === "");
+                alert("Prosim izpolnite vsa polja.");
+                event.preventDefault(); // prepreči pošiljanje
+        }
+
+        window.onload = function() {
+        document.querySelector("form").addEventListener("submit", preveriObrazec); //ne vem kaj to naredi, kopiral sem kodo
+        };
+    </script>
+
+    <div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Domov</a></li>
+                <li><a href="index.html">Moj PGD</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="#">Oprema</a></li>
+                <li><a href="#">Vozila</a></li>
+                <li><a href="#">Galerija</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="ozadjeGumbi">
+        <button type="button" onclick="svetloOzadje()"><img src="fireMedia\svetlo.png" alt=""></button>
+        <button type="button" onclick="temnoOzadje()"><img src="fireMedia\temno.png" alt=""></button>
+    </div>
+    
+    <div>
+        <p class="form_p">
+            Prosimo, izpolnite anketo o spletni strani:
+        </p>
+    </div>
+    <div class=div-form>
+        <form action="post">
+
+            <label for="ime">Ime: </label> 
+            <br>
+            <input type="text" id="ime" name="ime"> 
+            <br>
+            <br>
+
+            <label for="priimek">Priimek</label> 
+            <br>
+            <input type="text" id="priimek" name="priimek">
+            <br>
+            <br>
+
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" name="email">
+            <br>
+            <br>
+
+            <label class="spol">
+                Moški:
+                <input type="radio" name="spol">
+            </label>
+            <label class="spol">
+                Ženska:
+                <input type="radio" name="spol">
+            </label>
+            <br>
+            <br>
+
+            <label class="gasilec">
+                Sem gasilec
+                <input type="radio" name="gasilec">
+            </label>
+            <label class="spol">
+                Nisem  gasilec
+                <input type="radio" name="gasilec">
+            </label>
+            <br>
+            <br>
+
+            <button class="gumbek" type="submit" onclick="preveriObrazec()">Pošlji:</button>
+        </form>
+    </div>
+
+
+    <div id="kontakt">
+        <address>
+            Avtor: <a href="mailto:leskovar.aljaz@outlook.com">Aljaz Leskovar</a><br>
+        </address> 
+    </div>
+    <footer>
+        <p>&copy; 2025 Aljaž Leskovar</p>
+    </footer>
+</body>
+</html>

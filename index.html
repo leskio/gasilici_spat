@@ -8,28 +8,38 @@
     <link rel="icon" href="fireMedia/pgd_logo.png">
 </head>
 <body>
+    <script>
+        function svetloOzadje() {
+            document.body.style.backgroundColor = "#7d7878";
+        }
+        function temnoOzadje() {
+            document.body.style.backgroundColor = "#414141";
+        }
+    </script>
     <header>
         <h1>Moj PGD</h1>
     </header>
     <div>
-        <!-- trenutno nedelujoče ker se mi še ne da pa ker to delam ob pol dvanajstih -->
         <nav>
             <ul>
-                <li><a href="#">Domov</a></li>
+                <li><a href="home.html">Domov</a></li>
                 <li><a href="index.html">Moj PGD</a></li>
-                <li><a href="#">Organizacija</a></li>
+                <li><a href="form.html">Form</a></li>
                 <li><a href="#">Oprema</a></li>
                 <li><a href="#">Vozila</a></li>
                 <li><a href="#">Galerija</a></li>
             </ul>
     </nav>
     </div>
-
+    <div class="ozadjeGumbi">
+        <button type="button" onclick="svetloOzadje()"><img src="fireMedia\svetlo.png" alt=""></button>
+        <button type="button" onclick="temnoOzadje()"><img src="fireMedia\temno.png" alt=""></button>
+    </div>
     <div class="flexbox"">
         <div class="divs"> 
             <h2>Gasilska mladina</h2>
             <p>V našem društvu se z mladino ukvarjamo že 10 let in imamo zato veliko izkušenj z delom z njimi.<br>
-                Tako pionirji, mladinicin pripravniki na gasilskih tekmvanjih dosegamo izjemne rezultate, med drugim smo tudi dvokrtani državni prvaki.
+                Tako pionirji, mladinci in pripravniki na gasilskih tekmvanjih dosegamo izjemne rezultate, med drugim smo tudi dvokrtani državni prvaki.
                 Gasilstvo je več kot le tekmovanja, prav tako se skupaj zelo veliko družimo, tudi med-generacijsko, predvsem na aktivnostih organiziranih
                 v društvu.
                 <br>
@@ -102,11 +112,11 @@
         </div>
     </div>
 
-    <div id="kontakt">
-        <address>
-            Avtor: <a href="mailto:leskovar.aljaz@outlook.com">Aljaz Leskovar</a><br>
-        </address> 
-    </div>
+        <div id="kontakt">
+            <address>
+                Avtor: <a href="mailto:leskovar.aljaz@outlook.com">Aljaz Leskovar</a><br>
+            </address> 
+        </div>
 
     <footer>
         <p>&copy; 2025 Aljaž Leskovar</p>

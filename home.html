@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <title>PGD Majšperk-Breg</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fireMedia/pgd_logo.png">
+</head>
+<body>
+    <script>
+        function svetloOzadje() {
+            document.body.style.backgroundColor = "#7d7878";
+        }
+        function temnoOzadje() {
+            document.body.style.backgroundColor = "#414141";
+        }
+        function dobrodosli(){
+            alert("Dobrodošli!!!")
+        }
+    </script>
+    <header>
+        <h1>Domov</h1>
+    </header>
+    
+    <div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Domov</a></li>
+                <li><a href="index.html">Moj PGD</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="#">Oprema</a></li>
+                <li><a href="#">Vozila</a></li>
+                <li><a href="#">Galerija</a></li>
+            </ul>
+    </nav>
+    <div class="ozadjeGumbi">
+        <button type="button" onclick="svetloOzadje()"><img src="fireMedia\svetlo.png" alt=""></button>
+        <button type="button" onclick="temnoOzadje()"><img src="fireMedia\temno.png" alt=""></button>
+    </div>
+    <div class="flexbox">
+        <button type="button" onclick="dobrodosli()" class="dobrodoslica">Dobrodošli</button>
+    </div>
+    <div id="kontakt">
+        <address>
+            Avtor: <a href="mailto:leskovar.aljaz@outlook.com">Aljaz Leskovar</a><br>
+        </address> 
+    </div>
+    <footer>
+        <p>&copy; 2025 Aljaž Leskovar</p>
+    </footer>
+</body>
+</html>
