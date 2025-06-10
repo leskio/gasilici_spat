@@ -7,9 +7,12 @@ function temnoOzadje() {
 function dobrodosli(){
     alert("Dobrodošli!!!")
 }
-function prikaziAlert (){
+function prikaziAlert(){
     alert("Obrazec poslan")
 }
+
+
+
 function preveriObrazec (){
     const ime = document.getElementById("ime").value.trim();
     const priimek = document.getElementById("priimek").value.trim();

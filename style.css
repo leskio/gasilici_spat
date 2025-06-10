@@ -72,6 +72,9 @@ h2 {
     border-radius: 5px;
     width: 50%;
 }
+.divs:hover {
+    background-color: rgb(200, 200, 200);
+}
 
 .slikeDivsHmpg {
     margin: 1vh;
@@ -139,7 +142,21 @@ ul li:last-child {
 input:focus{
     background-color: yellow;
 }
+input:hover {
+    border: 2px black solid;
 
+}
+textarea {
+    resize: none;
+    height: 120px;
+    width: auto;
+}
+textarea:focus{
+    background-color: yellow;
+}
+textarea:hover{
+    border: 2px black solid;
+}
 .div-form{
     display: flex;
     justify-content: center;
@@ -155,16 +172,13 @@ input:focus{
     background-color: red;
     width: 6vh;
     height: 3vh;
-    
 }
+.gumbek:hover{
+    background-color: yellow;
 
+}
 .gumbek:active{
     background-color: yellow;
-}
-textarea {
-    resize: none;
-    height: 120px;
-    width: auto;
 }
 
 .ozadjeGumbi img {
