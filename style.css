@@ -161,6 +161,11 @@ input:focus{
 .gumbek:active{
     background-color: yellow;
 }
+textarea {
+    resize: none;
+    height: 120px;
+    width: auto;
+}
 
 .ozadjeGumbi img {
     width: 30px;
@@ -170,4 +175,8 @@ input:focus{
 .dobrodoslica {
     width: 80px;
     height: 40px;
+}
+
+#obrazecText {
+    height: 200px;
 }
