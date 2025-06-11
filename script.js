@@ -12,8 +12,10 @@ function dobrodosli(){
 function prikaziAlert(){
     alert("Obrazec poslan")
 }
+/* if document.getElementsById("gumbek") ===;
+naredi preverjanje pritiska gumba
+*/
 
-// var bgColor = "#7d7878"
 
 function preveriObrazec (){
     const ime = document.getElementById("ime").value.trim();
