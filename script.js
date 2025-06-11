@@ -1,8 +1,10 @@
+var lightColor = "#7d7878";
+var darkColor ="#414141";
 function svetloOzadje() {
-    document.body.style.backgroundColor = "#7d7878";
+    document.body.style.backgroundColor = lightColor;
 }
 function temnoOzadje() {
-    document.body.style.backgroundColor = "#414141";
+    document.body.style.backgroundColor = darkColor;
 }
 function dobrodosli(){
     alert("Dobrodošli!!!")
@@ -11,7 +13,7 @@ function prikaziAlert(){
     alert("Obrazec poslan")
 }
 
-
+// var bgColor = "#7d7878"
 
 function preveriObrazec (){
     const ime = document.getElementById("ime").value.trim();
