@@ -37,48 +37,24 @@
     <div class=div-form>
         <form action="leskovar.aljaz@outlook.com" method="post">
 
-            <label for="ime">Ime: </label> 
-            <br>
-            <input type="text" id="ime" name="ime"> 
-            <br>
-            <br>
+            <label for="ime">Ime</label>
+            <input type="text" id="ime" name="ime" placeholder="Vaše ime..."><br>
 
-            <label for="priimek">Priimek</label> 
-            <br>
-            <input type="text" id="priimek" name="priimek">
-            <br>
-            <br>
+            <label for="priimek">Priimek</label>
+            <input type="text" id="priimek" name="priimek" placeholder="Vaš priimek..."><br>
 
             <label for="email">Email: </label><br>
-            <input type="email" id="email" name="email">
-            <br>
-            <br>
+            <input type="email" id="email" name="email" placeholder="Vaš e-naslov..."><br>
 
-            <label class="spol">
-                Moški:
-                <input type="radio" name="spol">
-            </label>
-            <label class="spol">
-                Ženska:
-                <input type="radio" name="spol">
-            </label>
-            <br>
-            <br>
+            <label class="spol">Moški:</label>
+            <input type="radio" name="spol">
+            
+            <label class="spol">Ženska:</label>
+            <input type="radio" name="spol"><br>
 
-            <textarea cols="30" rows="5" placeholder="Napiši nam kar želiš."></textarea>
-            <br>
-            <br>
+            <label for="tekst">Vaš tekst...</label>
+            <textarea id="tekst" name="tekst" placeholder="Napišite nekaj..." style="height:200px"></textarea>
 
-            <label class="gasilec">
-                Sem gasilec
-                <input type="radio" name="gasilec">
-            </label>
-            <label class="spol">
-                Nisem  gasilec
-                <input type="radio" name="gasilec">
-            </label>
-            <br>
-            <br>
 
             <button class="gumbek" type="submit" onclick="preveriObrazec()">Pošlji:</button>
         </form>
